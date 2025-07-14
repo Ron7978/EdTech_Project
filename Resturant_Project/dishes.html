@@ -1,0 +1,206 @@
+<!-- Kindly don't change the pre-written code -->
+ <!---Add your code where specified-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+
+        header img {
+            width: 140px;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px; /* Adjusted for better spacing */
+        }
+
+        section {
+            padding: 12px;
+        }
+
+        section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 40%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        #special-dishes {
+            /* display: flex;
+            justify-content: left;
+            flex-wrap: wrap;  */
+            margin: -20px 0;
+        }
+
+        #special-dish-1, #special-dish-2, #special-dish-3, #special-dish-4 {
+            margin: 10px;
+            /* text-align: center; */
+        }
+
+        #special-dish-1 img, #special-dish-2 img, #special-dish-3 img, #special-dish-4 img {
+            width: 350px;
+            height: 270px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        #special-dish-1 a, #special-dish-2 a, #special-dish-3 a, #special-dish-4 a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #special-dish-1 a:hover, #special-dish-2 a:hover, #special-dish-3 a:hover, #special-dish-4 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+    </header>
+    <!-- Navigation Menu (Accessible on all pages) -->
+    <nav>
+        <!-- Add a welcome heading -->
+        <!-- Add links to Home, Dishes, and Contact Us pages -->
+        <a href="home.html">Home</a></li> | &nbsp;&nbsp;
+        <a href="dishes.html">Dishes</a></li> | &nbsp;&nbsp;
+        <a href="contact.html">Contact Us</a></li> &nbsp;&nbsp;
+    </nav>
+
+    <section id="chef-list">
+        <h1><u>Our Chef's</u></h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Chefs</th>
+                    <th>Specialities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Chef Mario</td>
+                    <td>Italian</td>
+                </tr>
+                <tr>
+                    <td>French</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Chef John</td>
+                    <td>Chinese</td>
+                </tr>
+                <tr>
+                    <td>Thai</td>
+                </tr>
+                <tr>
+                    <td>Japanese</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Chef Vikas</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Mughlai</td>
+                </tr>
+                </tbody>
+            <!-- Chef details go here -->
+        </table>
+    </section>
+
+    <section id="special-dishes-img-list">
+        <h1><u>Our Dishes</u></h1>
+        <section id="special-dishes">
+            <section id="dish-1">
+                <div id="special-dish-1" class="dish">
+                    <h3>1. Panner Butter Masala</h3>
+                    <a href="dishes.html">
+                        <img src="/Resturant_Project/MultiMedia/paneer-butter-masala.jpg" alt="Panner Butter Masala"
+                            height="280" />
+                    </a>
+                    <p><em>Paneer cooked in a rich and creamy tomato gravy.</em></p>
+                </div>
+            </section>
+    
+            <section>
+                <div id="special-dish-2" class="dish">
+                    <h3>2. Kadai Paneer</h3>
+                    <a href="dishes.html">
+                        <img src="/Resturant_Project/MultiMedia/kadai-paneer.jpg" alt="Kadai Paneer" width="374"
+                            height="280" />
+                    </a>
+                    <p><em>Paneer cooked in a spicy gravy with bell peppers and onions.</em></p>
+                </div>
+            </section>
+    
+            <section id="dish-3">
+                <div id="special-dish-3" class="dish">
+                    <h3>3. Chicken Tikka Masala</h3>
+                    <a href="dishes.html">
+                        <img src="/Resturant_Project/MultiMedia/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala"
+                            width="374" height="280" />
+                    </a>
+                    <p><em>Grilled Chicken pieces cooked in a spicy tomato gravy.</em></p>
+                </div>
+            </section>
+    
+            <section>
+                <div id="special-dish-4" class="dish">
+                    <h3>4. Kadai Chicken</h3>
+                    <a href="dishes.html">
+                        <img src="/Resturant_Project/MultiMedia/kadai-chicken.jpg" alt="Kadai Chicken" width="374"
+                            height="280" />
+                    </a>
+                    <p><em>Chicken cooked in a spicy gravy with bell peppers and onions.</em></p>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

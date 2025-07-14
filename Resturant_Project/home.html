@@ -1,0 +1,242 @@
+<!-- Kindly don't change the pre-written code -->
+<!---Add your code where specified-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+    nav {
+        background-color: #444;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 30px;
+        /* margin: 0 15px;
+         text-decoration: none;
+         color: #333; */
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    section p {
+        justify-content: center;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #special-dishes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #special-dish-1,
+    #special-dish-2,
+    #special-dish-3,
+    #special-dish-4 {
+        margin: 10px;
+        text-align: center;
+    }
+
+    #special-dish-1 img,
+    #special-dish-2 img,
+    #special-dish-3 img,
+    #special-dish-4 img {
+        width: 390px;
+        height: 280px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #customer-reviews {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #customer-reviews h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #customer-reviews ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #customer-reviews li {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #customer-reviews li:hover {
+        background-color: #e9e9e9;
+        cursor: pointer;
+    }
+
+    #resv {
+        float: right;
+        margin-top: 20px;
+    }
+
+    footer {
+        background-color: #444;
+        color: white;
+        padding: 2px 0;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+    </header>
+
+    <!-- TODO: Add a navigation menu here -->
+    <nav>
+        <!-- Add a welcome heading -->
+        <!-- Add links to Home, Dishes, and Contact Us pages -->
+        <a href="home.html">Home</a></li> | &nbsp;&nbsp;
+        <a href="dishes.html">Dishes</a></li> | &nbsp;&nbsp;
+        <a href="contact.html">Contact Us</a></li> &nbsp;&nbsp;
+    </nav>
+
+    <!-- TODO: Create the main content for the home page -->
+    <main>
+        <section id="about">
+            <h1><u>About Us</u></h1>
+            <!-- TODO: Add a brief description of the restaurant -->
+            <p>We are a family-owned restaurant serving delicious meals made with fresh ingredients. Our chefs are
+                dedicated
+                to providing you with an unforgettable dining experience.</p>
+            <p>We offer a variety of dishes, from traditional favorites to modern culinary creations. Our menu is
+                designed
+                to cater to all tastes and dietary preferences.</p>
+            <p>Join us for a meal and experience the warmth of our hospitality.</p>
+            <p>We are located in the heart of the city, making it easy for you to visit us. Our restaurant is open for
+                lunch
+                and dinner, and we also offer takeout and delivery services.</p>
+            <p>We look forward to serving you soon!</p>
+        </section>
+
+        <section id="specialty">
+            <h2><u>Our Specialty</u></h2>
+            <div id="special-dishes">
+                <!-- TODO: Add 2-3 special dishes with names and brief descriptions -->
+                <div id="special-dish-1">
+                    <h3>Panner Butter Masala</h3>
+                    <a href="dishes.html#dish-1">
+                        <img src="/Resturant_Project/MultiMedia/paneer-butter-masala.jpg" alt="Panner Butter Masala"
+                            height="280" />
+                    </a>
+                </div>
+                <!-- <div id="special-dish-2">
+                    <h3>Kadai Paneer</h3>
+                    <a href="dishes.html#dish-2">
+                        <img src="/Resturant_Project/MultiMedia/kadai-paneer.jpg" alt="Kadai Paneer" width="374"
+                            height="280" />
+                    </a>
+                </div> -->
+                <div id="special-dish-3">
+                    <h3>Chicken Tikka Masala</h3>
+                    <a href="dishes.html#dish-3">
+                        <img src="/Resturant_Project/MultiMedia/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala"
+                            width="374" height="280" />
+                    </a>
+                </div>
+                <!-- <div id="special-dish-4">
+                    <h3>Kadai Chicken</h3>
+                    <a href="dishes.html#dish-4">
+                        <img src="/Resturant_Project/MultiMedia/kadai-chicken.jpg" alt="Kadai Chicken" width="374"
+                            height="280" />
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="customer-reviews">
+            <h2><u>Customer Reviews</u></h2>
+            <div id="customer-reviews">
+                <ul>
+                    <li>The restaurant has a cozy atmosphere, making it a great place to relax and enjoy a meal. And
+                        the food is top-notch!, I highly recommend the Kadai Chicken - John</li>
+                    <li>The variety of dishes is impressive. I love trying new things every time I visit The Kadai
+                        Paneer is a must-try! - Priya</li>
+                    <li>The ambiance is perfect for a family dinner. The staff is friendly and attentive. I highly
+                        recommend the Panner Butter Masala! - Sarah</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="social-media-links">
+        <p><u>Follow Us</u></p>
+        <a href="https://www.facebook.com/restaurant">
+            <img src="/EdTech-Project/Multimedia/facebook.png" _target="_blank" alt="Facebook" width="35">
+        </a>
+        <a href="https://twitter.com/restaurant">
+            <img src="/EdTech-Project/Multimedia/twitter.png" _target="_blank" alt="Twitter" width="35">
+        </a>
+        <a href="https://www.instagram.com/restaurant/">
+            <img src="/EdTech-Project/Multimedia/instagram.png" _target="_blank" alt="Instagram" width="35">
+        </a>
+        <a href="https://www.linkedin.com/company/restaurant/">
+            <img src="/EdTech-Project/Multimedia/linkedin.png" _target="_blank" alt="LinkedIn" width="35">
+        </a>
+        <p id="resv">&copy; 2025 Our Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
