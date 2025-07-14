@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Ninjas - </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            margin-right: 170px;
+            padding: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 140px;
+        }
+        #logo {    
+            float: left;
+            margin-left: 10px;
+        }
+        
+        #login {
+            background-color: #333;
+        }
+        #login summary {
+            margin-top: 4px;
+            background-color: #333;
+            color: white;
+            margin-left: -36px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #login ul {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-left: 665px;
+            text-align: center;
+        }
+        #login[open] ul {
+            display: block;
+            background-color: #444;
+            color: white;
+            padding: 4px;
+            position: relative;
+            right: 24px;
+            width: 200px;
+            bottom: 6px;
+        }
+        #login ul li {
+            margin: 10px 0;
+        }
+        #login ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        #course-images img {
+            margin-right: 10px;
+        }
+        #course-images {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 158px;
+        }
+        #course-images a {
+            margin: 10px;
+            text-align: center;
+        }
+        #course-images img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #resv {
+            float: right;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 2px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="/EdTech-Project/Multimedia/new_cn_logo.svg"/></a>
+        </div>
+        <h1>Welcome to the Coding Ninjas</h1>
+        <details id="login">
+            <summary>Get yourself registered</summary>
+            <ul>
+                <li><a href="login.html">Already have an account</a></li>
+                <li><a href="register.html">New user registration</a></li>
+            </ul>
+        </details>
+    </header>
+    <hr>
+    <nav>
+        <a href="index.html">Home</a></li> | &nbsp;&nbsp;
+        <a href="courses.html">Courses</a></li> | &nbsp;&nbsp;
+        <a href="contact.html">Contact Us</a></li> | &nbsp;&nbsp;
+        <a href="admin.html">Admin</a></li> &nbsp;&nbsp;
+    </nav>
+
+    <main>
+        <section>
+            <h2><u>About Us</u></h2>
+            <p>We are a leading online education platform that offers a wide range of courses in programming, data science, and more.</p>
+            <p>Our mission is to provide high-quality education to students around the world.</p>
+        </section>
+        <section>
+            <h2><u>Our Courses</u></h2>
+            <div id="course-images">
+                <a href="courses.html#course-1">
+                    <img src="/EdTech-Project/Multimedia/Web_development.jpg" 
+                    alt="Web Development" 
+                    height="300" />
+                </a>
+                
+                <a href="courses.html#course-2">
+                    <img src="/EdTech-Project/Multimedia/data-science.jpg" 
+                    alt="Data Science" 
+                    width="550" 
+                    height="300" />
+                </a>
+                
+                
+                <a href="courses.html#course-3">
+                    <img src="/EdTech-Project/Multimedia/android_development.jpg" 
+                    alt="Android Development"
+                    width="534"
+                    height="300" />
+                </a>
+                <a href="courses.html#course-4">
+                    <img src="/EdTech-Project/Multimedia/Digital_Marketing.png" 
+                    alt="Digital Marketing" 
+                    width="550" 
+                    height="300" />
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2><u>Why Choose Coding Ninjas?</u></h2>
+            <p>we are dedicated to providing high-quality education through our online platform. 
+                Here are some reasons to choose Coding Ninjas:
+            </p>
+            <ul>
+                <li>Expert Instructors</li>
+                <li>Interactive Learning</li>
+                <li>Materials Flexible</li>
+                <li>Schedules Access to a Diverse Range of Course</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><u>Testimonials</u></h2>
+            <dt><b>Sonali Kar</b></dt>
+            <blockquote>
+                <dd>
+                    "Coding Ninjas has transformed my learning experience. The courses are well-structured and the instructors are knowledgeable."
+                </dd>
+            </blockquote>
+            <dt><b>Satyam Rai</b></dt>
+            <blockquote>
+                <dd>
+                    "The hands-on projects helped me apply what I learned in real-world scenarios. I highly recommend Coding Ninjas."
+                </dd>
+            </blockquote>
+            <dt><b>Ankush Shah</b></dt>
+            <blockquote>
+                <dd>
+                    "I love the interactive approach to learning. It keeps me engaged and motivated."
+                </dd>
+            </blockquote>
+            <dt><b>Rounak</b></dt>
+            <blockquote>
+                <dd>
+                    "The support from the community and instructors is amazing. I always feel supported in my learning journey."
+                </dd>
+            </blockquote>
+        </section>
+    </main>
+    
+    <hr>
+
+    <footer>
+        <p>Connect with us on: </p>
+        <a href="https://www.facebook.com/codingninjasindia">
+            <img src="/EdTech-Project/Multimedia/facebook.png" 
+            _target="_blank" 
+            alt="Facebook" 
+            width="35">
+        </a> 
+        <a href="https://twitter.com/codingninjas">
+            <img src="/EdTech-Project/Multimedia/twitter.png" 
+            _target="_blank" 
+            alt="Twitter" 
+            width="35">
+        </a>
+        <a href="https://www.instagram.com/codingninjas/">
+            <img src="/EdTech-Project/Multimedia/instagram.png" 
+            _target="_blank" 
+            alt="Instagram" 
+            width="35">
+        </a>
+        <a href="https://www.linkedin.com/company/codingninjas/">
+            <img src="/EdTech-Project/Multimedia/linkedin.png" 
+            _target="_blank" 
+            alt="LinkedIn" 
+            width="35">
+        </a>
+        <p id="resv">&copy; 2023 Coding Ninjas. All rights reserved.</p>
+    </footer>
+    <!-- <script>
+        const loginDetails = document.querySelector('#login');
+        loginDetails.addEventListener('toggle', () => {
+            if (loginDetails.open) {
+                loginDetails.querySelector('summary').textContent = 'Hide Login Options';
+            } else {
+                loginDetails.querySelector('summary').textContent = 'Get yourself registered';
+            }
+        });
+    </script>-->
+</body>
+</html>

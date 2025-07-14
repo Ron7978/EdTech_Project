@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            margin-right: 170px;
+            padding: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 140px;
+        }
+        #logo {
+            float: left;
+            margin-left: 10px;
+        }
+        #contact {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #contact h2 {
+            margin-top: 0;
+        }
+        #contact p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        #contact a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 5px;
+            height: 1px;
+            background-color: #111111;
+            margin: 20px 0;
+        }
+        #map {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #map h2 {
+            margin-top: 0;
+        }
+        #map iframe {
+            width: 60%;
+            height: 450px;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+        #map p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        #map a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        #map a:hover {
+            text-decoration: underline;
+        }
+        #feedback-form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #feedback-form h2 {
+            margin-top: 0;
+        }
+        #feedback-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        #feedback-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"],
+        #feedback-form input[type="submit"],
+        #feedback-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        #feedback-form input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #feedback-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #feedback-form fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        #feedback-form legend {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #feedback-form textarea {
+            resize: vertical;
+        }
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"] {
+            width: 100%;
+        }
+        #feedback-form textarea {
+            width: 100%;
+        }
+        #feedback-form input[type="submit"] {
+            width: auto;
+            align-self: flex-start;
+        }
+        #feedback-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #feedback-form fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        #feedback-form legend {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #feedback-form textarea {
+            resize: vertical;
+        }
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"] {
+            width: 80%;
+        }
+        #feedback-form textarea {
+            width: 80%;
+        }
+        #feedback-form input[type="submit"] {
+            width: auto;
+            align-self: flex-start;
+        }
+        #feedback-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #feedback-form fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        #feedback-form legend {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #feedback-form textarea {
+            resize: vertical;
+        }
+        #feedback-form input[type="text"],
+        #feedback-form input[type="email"] {
+            width: 80%;
+        }
+        #feedback-form textarea {
+            width: 80%;
+        }
+        #feedback-form input[type="submit"] {
+            width: auto;
+            align-self: flex-start;
+        }
+        #feedback-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="/EdTech-Project/Multimedia/new_cn_logo.svg"/></a>
+        </div>        
+    </header>
+
+    <hr/>
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <p>For Inqueries you can reach out to us via Email or Phone </p>
+        <p>Email: <a href="mailto:contact@codingninjas.com">contact@codingninjas.com</a></p>
+        <p>Phone: <a href="tel:1800-123-3598">1800-123-3598</a></p>
+    </section>
+
+    <hr/>
+
+    <section id="map">
+        <h2>Location Map</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248844.7912222248!2d77.5215912!3d12.9590592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15fe13a35cc1%3A0x8fee15f008995349!2sBest%20live%20Coding%20Classes%20for%20kids%20CodingChamp!5e0!3m2!1sen!2sin!4v1745759360214!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <section id="feedback-form">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <br/>
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

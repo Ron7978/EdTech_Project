@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Ninjas - Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            margin-right: 170px;
+            padding: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 140px;
+        }
+        #logo {
+            float: left;
+            margin-left: 10px;
+        }
+        #admin-dashboard {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #admin-dashboard h2 {
+            margin-top: 0;
+        }
+        #admin-dashboard p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        #admin-dashboard a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        #admin-dashboard a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 5px;
+            height: 1px;
+            background-color: #111111;
+            margin: 20px 0;
+        }
+        #enrollment-list {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #enrollment-list h2 {
+            margin-top: 0;
+        }
+        #enrollment-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #enrollment-list th, #enrollment-list td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        #enrollment-list th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        #enrollment-list tr:hover {
+            background-color: #f1f1f1;
+        }
+        #enrollment-list caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #enrollment-list tfoot {
+            font-weight: bold;
+        }
+        #enrollment-list tfoot td {
+            text-align: right;
+        }
+        #enrollment-list tfoot td[colspan="6"] {
+            text-align: left;
+        }
+        #enrollment-list tfoot td[colspan="3"] {
+            text-align: right;
+        }
+        #enrollment-list tfoot td[colspan="2"] {
+            text-align: left;
+        }
+        #enrollment-list tfoot td[colspan="1"] {
+            text-align: center;
+        }
+        #enrollment-list tfoot td[colspan="0"] {
+            text-align: right;
+        }
+        #enrollment-list tfoot td[colspan="5"] {
+            text-align: left;
+        }
+        #enrollment-list tfoot td[colspan="4"] {
+            text-align: right;
+        }
+        #enrollment-list tfoot td[colspan="3"] {
+            text-align: left;
+        }
+        #enrollment-list tfoot td[colspan="2"] {
+            text-align: right;
+        }
+        #enrollment-list tfoot td[colspan="1"] {
+            text-align: left;
+        }
+        #enrollment-list tfoot td[colspan="0"] {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="/EdTech-Project/Multimedia/new_cn_logo.svg"/></a>
+        </div>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <hr/>
+
+    <section id="enrollment-list">
+        <h2>Enrollment List</h2>
+
+        <table border="1">
+            <caption>List of User Enrollment</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">User ID</th>
+                    <th rowspan="2">FullName</th>
+                    <th rowspan="2">Email</th>
+                    <th colspan="2">Enrolled Courses</th>
+                </tr>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td rowspan="3">Rohit Jane</td>
+                    <td rowspan="3">rohit.jane@example.com</td>
+                    <td>101</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Data Science Basics</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Digital Marketing Strategies</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rahul</td>
+                    <td>rahul4@example.com</td>
+                    <td>104</td>
+                    <td>Android Development</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sonali Kar</td>
+                    <td>sonali.kar@example.com</td>
+                    <td>105</td>
+                    <td>Data Science Fundamentals</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Satyam Rai</td>
+                    <td>satyam.rai@example.com</td>
+                    <td>106</td>
+                    <td>Machine Learning Fundamentals</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Ankush Shah</td>
+                    <td>ankush.shah@example.com</td>
+                    <td>107</td>
+                    <td>Web Development Fundamentals</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Rounak Bhattacharya</td>
+                    <td>rounakbhattacharya@example.com</td>
+                    <td>108</td>
+                    <td>NodeJs</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Sandeep Kar</td>
+                    <td>sandeep.kar@example.com</td>
+                    <td>109</td>
+                    <td>React-Js</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total Enrollments : 7</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>    
+</body>
+</html>

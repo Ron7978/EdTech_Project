@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 140px;
+        }
+        #logo {
+            float: left;
+            margin-left: 10px;
+        }
+        #register-form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #register-form fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        #register-form legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #register-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #register-form input[type="text"],
+        #register-form input[type="email"],
+        #register-form input[type="password"] {
+            width: calc(30% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #register-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #register-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        #register-form select {
+            width: calc(31.5% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #register-form select option {
+            padding: 8px;
+        }
+        #register-form select option:disabled {
+            color: #999;
+        }
+        #register-form select option:disabled:hover {
+            background-color: #f4f4f4;
+        }  
+        #register-form select option:hover {
+            background-color: #f4f4f4;
+        }
+        #register-form input[type="text"]:focus,
+        #register-form input[type="email"]:focus,
+        #register-form input[type="password"]:focus,
+        #register-form select:focus {
+            border-color: #333;
+            outline: none;
+        }
+        #register-form input[type="text"]:focus::placeholder,
+        #register-form input[type="email"]:focus::placeholder,
+        #register-form input[type="password"]:focus::placeholder,
+        #register-form select:focus::placeholder {
+            color: #999;
+        }
+        #register-form input[type="text"]::placeholder,
+        #register-form input[type="email"]::placeholder,
+        #register-form input[type="password"]::placeholder,
+        #register-form select::placeholder {
+            color: #ccc;
+        }
+        #register-form input[type="text"]:disabled,
+        #register-form input[type="email"]:disabled,
+        #register-form input[type="password"]:disabled,
+        #register-form select:disabled {
+            background-color: #f4f4f4;
+            color: #999;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="/EdTech-Project/Multimedia/new_cn_logo.svg"/></a>
+        </div>
+        <h2>Create an Account</h2>
+    </header>
+    
+    <section id="register-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <form action="#" method="post">
+                <label for="fullname">FullName:</label>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="username">UserName:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="usertype">UserType:</label>
+                <select id="usertype" name="usertype" required>
+                    <option value="" disabled selected>Select User Type</option>
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="admin">Admin</option>
+                </select><br><br>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select Course</option>>
+                    <option value="webdev">Course-1 Web Development</option>
+                    <option value="data-science">Course-2 Data Science Fundamentals</option>
+                    <option value="android">Course-3 Android Development</option>
+                    <option value="digital-marketing">Course-4 Digital Marketing</option>
+                </select><br><br>
+                
+                <input type="submit" value="Register">
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>
